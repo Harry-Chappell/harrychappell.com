@@ -2172,3 +2172,8 @@ be set to display none.
   .respond-form,
   nav {
     display: none; } }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

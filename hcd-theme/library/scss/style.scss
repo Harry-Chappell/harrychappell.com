@@ -16,6 +16,13 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 
 ******************************************************************/
 
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 /*********************
 IMPORTING PARTIALS
 These files are needed at the beginning so that we establish all
