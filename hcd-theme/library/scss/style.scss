@@ -16,11 +16,7 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 
 ******************************************************************/
 
-
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindoutput";
 
 
 /*********************

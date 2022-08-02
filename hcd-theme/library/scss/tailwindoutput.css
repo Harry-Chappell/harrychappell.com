@@ -551,8 +551,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-/* All of the existing CSS goes here. */
-
 .container {
   width: 100%;
 }
@@ -593,6 +591,11 @@ video {
 
 .contents {
   display: contents;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .text-3xl {

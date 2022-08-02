@@ -30,7 +30,10 @@
             <meta name="theme-color" content="#121212">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-        
+
+		<!-- Tailwind -->
+		<link href="/library/scss/tailwindoutput.css" rel="stylesheet">
+
         
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
@@ -47,10 +50,14 @@
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
+
+  <h1 class="text-2xl font-bold underline py-9">
+    Hello world!
+  </h1>
 				<div id="inner-header" class="wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a class="text-3xl font-bold underline" href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a class="text-3xl fon-bold underline" href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
