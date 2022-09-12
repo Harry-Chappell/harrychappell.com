@@ -1,50 +1,40 @@
+<div id="comments">
 <?php
-/*
-The comments page for Bones
-*/
-
-// don't load it if you can't comment
-if ( post_password_required() ) {
-  return;
-}
-
+if ( have_comments() ) :
+global $comments_by_type;
+$comments_by_type = separate_comments( $comments );
+if ( !empty( $comments_by_type['comment'] ) ) :
 ?>
-
-<?php // You can start editing here. ?>
-
-  <?php if ( have_comments() ) : ?>
-
-    <h3 id="comments-title" class="h2"><?php comments_number( __( '<span>No</span> Comments', 'bonestheme' ), __( '<span>One</span> Comment', 'bonestheme' ), __( '<span>%</span> Comments', 'bonestheme' ) );?></h3>
-
-    <section class="commentlist">
-      <?php
-        wp_list_comments( array(
-          'style'             => 'div',
-          'short_ping'        => true,
-          'avatar_size'       => 40,
-          'callback'          => 'bones_comments',
-          'type'              => 'all',
-          'reply_text'        => __('Reply', 'bonestheme'),
-          'page'              => '',
-          'per_page'          => '',
-          'reverse_top_level' => null,
-          'reverse_children'  => ''
-        ) );
-      ?>
-    </section>
-
-    <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
-    	<nav class="navigation comment-navigation" role="navigation">
-      	<div class="comment-nav-prev"><?php previous_comments_link( __( '&larr; Previous Comments', 'bonestheme' ) ); ?></div>
-      	<div class="comment-nav-next"><?php next_comments_link( __( 'More Comments &rarr;', 'bonestheme' ) ); ?></div>
-    	</nav>
-    <?php endif; ?>
-
-    <?php if ( ! comments_open() ) : ?>
-    	<p class="no-comments"><?php _e( 'Comments are closed.' , 'bonestheme' ); ?></p>
-    <?php endif; ?>
-
-  <?php endif; ?>
-
-  <?php comment_form(); ?>
-
+<section id="comments-list" class="comments">
+<h2 class="comments-title"><?php comments_number(); ?></h2>
+<?php if ( get_comment_pages_count() > 1 ) : ?>
+<nav id="comments-nav-above" class="comments-navigation" role="navigation">
+<div class="paginated-comments-links"><?php paginate_comments_links(); ?></div>
+</nav>
+<?php endif; ?>
+<ul>
+<?php wp_list_comments( 'type=comment' ); ?>
+</ul>
+<?php if ( get_comment_pages_count() > 1 ) : ?>
+<nav id="comments-nav-below" class="comments-navigation" role="navigation">
+<div class="paginated-comments-links"><?php paginate_comments_links(); ?></div>
+</nav>
+<?php endif; ?>
+</section>
+<?php
+endif;
+if ( !empty( $comments_by_type['pings'] ) ) :
+$ping_count = count( $comments_by_type['pings'] );
+?>
+<section id="trackbacks-list" class="comments">
+<h2 class="comments-title"><?php echo '<span class="ping-count">' . esc_html( $ping_count ) . '</span> ' . esc_html( _nx( 'Trackback or Pingback', 'Trackbacks and Pingbacks', $ping_count, 'comments count', 'blankslate' ) ); ?></h2>
+<ul>
+<?php wp_list_comments( 'type=pings&callback=blankslate_custom_pings' ); ?>
+</ul>
+</section>
+<?php
+endif;
+endif;
+if ( comments_open() ) { comment_form(); }
+?>
+</div>
