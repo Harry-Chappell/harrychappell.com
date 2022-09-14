@@ -211,4 +211,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    --primary-color: #FB8E2C;
+    --text-color: #383D40;
+    --bg-color: #F3F3F3;
+    --component-bg-color: #F3F3F3;
+  }
+  body.dark-theme {
+    --primary-color: #FB8E2C;
+    --text-color: white;
+    --bg-color: black;
+    --component-bg-color: #26252B;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    --primary-color: #FB8E2C;
+    --text-color: white;
+    --bg-color: black;
+    --component-bg-color: #26252B;
+  }
+  body.light-theme {
+    --primary-color: #FB8E2C;
+    --text-color: #383D40;
+    --bg-color: #F3F3F3;
+    --component-bg-color: #F3F3F3;
+  }
+}
+a {
+  color: var(--primary-color);
+}
+
+body {
+  background-color: var(--bg-color);
 }/*# sourceMappingURL=style.css.map */
