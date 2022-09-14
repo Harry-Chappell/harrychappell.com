@@ -27,13 +27,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 @import 'src/scss/variables';
 @import 'src/scss/typography';
-@import 'src/scss/detail1';
-@import 'src/scss/detail2';
-@import 'src/scss/detail3';
-@import 'src/scss/detail4';
-@import 'src/scss/detail5';
-@import 'src/scss/detail6';
-@import 'src/scss/detail7';
+body.detail1 { @import 'src/scss/detail1'; }
+body.detail2 { @import 'src/scss/detail2'; }
+body.detail3 { @import 'src/scss/detail3'; }
+body.detail4 { @import 'src/scss/detail4'; }
+body.detail5 { @import 'src/scss/detail5'; }
+body.detail6 { @import 'src/scss/detail6'; }
+body.detail7 { @import 'src/scss/detail7'; }
 @import 'src/scss/header';
 @import 'src/scss/footer';
 @import 'src/scss/home';

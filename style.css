@@ -218,7 +218,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     --primary-color: #FB8E2C;
     --text-color: #383D40;
     --bg-color: #F3F3F3;
-    --component-bg-color: #F3F3F3;
+    --component-bg-color: white;
   }
   body.dark-theme {
     --primary-color: #FB8E2C;
@@ -238,7 +238,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     --primary-color: #FB8E2C;
     --text-color: #383D40;
     --bg-color: #F3F3F3;
-    --component-bg-color: #F3F3F3;
+    --component-bg-color: white;
   }
 }
 a {
