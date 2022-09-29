@@ -14,8 +14,7 @@
     <body <?php body_class( "detail1" ); ?>>
         <?php wp_body_open(); ?>
 
-        <button class="btn-toggle dark-hide"><i class="fa-solid fa-moon"></i></button>
-        <button class="btn-toggle light-hide"><i class="fa-solid fa-sun"></i></button>
+        <button class="btn-toggle"><i class="fa-solid fa-sun light-hide"></i><i class="fa-solid fa-moon dark-hide"></i></button>
 
         <script>
             const btn = document.querySelector(".btn-toggle");

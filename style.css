@@ -214,11 +214,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @media (prefers-color-scheme: light) {
-  body {
+  body:not(.dark-theme) {
     --primary-color: #FB8E2C;
     --text-color: #383D40;
     --bg-color: #F3F3F3;
     --component-bg-color: white;
+  }
+  body:not(.dark-theme) .light-hide {
+    display: none;
   }
   body.dark-theme {
     --primary-color: #FB8E2C;
@@ -226,19 +229,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     --bg-color: black;
     --component-bg-color: #26252B;
   }
+  body.dark-theme .dark-hide {
+    display: none;
+  }
 }
 @media (prefers-color-scheme: dark) {
-  body {
+  body:not(.light-theme) {
     --primary-color: #FB8E2C;
     --text-color: white;
     --bg-color: black;
     --component-bg-color: #26252B;
+  }
+  body:not(.light-theme) .dark-hide {
+    display: none;
   }
   body.light-theme {
     --primary-color: #FB8E2C;
     --text-color: #383D40;
     --bg-color: #F3F3F3;
     --component-bg-color: white;
+  }
+  body.light-theme .light-hide {
+    display: none;
   }
 }
 body .detail1,
