@@ -6,13 +6,16 @@
         <meta name="viewport" content="width=device-width" />
         
         <?php wp_head(); ?>
+
+        <script src="https://kit.fontawesome.com/9764a321e0.js" crossorigin="anonymous"></script>
     
     </head>
     
     <body <?php body_class( "detail1" ); ?>>
         <?php wp_body_open(); ?>
 
-        <button class="btn-toggle">Toggle Dark-Mode</button>
+        <button class="btn-toggle dark-hide"><i class="fa-solid fa-moon"></i></button>
+        <button class="btn-toggle light-hide"><i class="fa-solid fa-sun"></i></button>
 
         <script>
             const btn = document.querySelector(".btn-toggle");

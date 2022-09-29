@@ -27,6 +27,14 @@ $tertiary: $yellow;
         --text-color: white;
         --bg-color: black;
         --component-bg-color: #26252B;
+
+        .dark-hide {
+            display: none;
+        }
+    }
+
+    .light-hide {
+        display: none;
     }
 }
 @media (prefers-color-scheme: dark) {
@@ -42,5 +50,13 @@ $tertiary: $yellow;
         --text-color: #383D40;
         --bg-color: #F3F3F3;
         --component-bg-color: white;
+
+        .light-hide {
+            display: none;
+        }
+    }
+
+    .dark-hide {
+        display: none;
     }
 }
