@@ -11,7 +11,7 @@
     
     </head>
     
-    <body <?php body_class( "detail1" ); ?>>
+    <body <?php body_class( "detail5" ); ?>>
         <?php wp_body_open(); ?>
 
         <button class="btn-toggle"><i class="fa-solid fa-sun light-hide"></i><i class="fa-solid fa-moon dark-hide"></i></button>
@@ -68,7 +68,7 @@
             <div id="container">
                 <main id="content" role="main">
 
-                <input id="detail-slider" type="range" min="1" max="7" value="1" list="tickmarks">
+                <input id="detail-slider" type="range" min="1" max="7" value="5" list="tickmarks">
                 <output></output>
                 <datalist id="tickmarks">
                 <option value="1"></option>
