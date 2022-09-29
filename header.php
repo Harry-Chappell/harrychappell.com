@@ -46,6 +46,23 @@
                 </nav>
             </header>
 
+            <p class="detail1-hide">Detail 1 Hide</p>
+            <p class="detail2-hide">Detail 2 Hide</p>
+            <p class="detail3-hide">Detail 3 Hide</p>
+            <p class="detail4-hide">Detail 4 Hide</p>
+            <p class="detail5-hide">Detail 5 Hide</p>
+            <p class="detail6-hide">Detail 6 Hide</p>
+            <p class="detail7-hide">Detail 7 Hide</p>
+            <p class="detail1">Detail 1</p>
+            <p class="detail2">Detail 2</p>
+            <p class="detail3">Detail 3</p>
+            <p class="detail4">Detail 4</p>
+            <p class="detail5">Detail 5</p>
+            <p class="detail6">Detail 6</p>
+            <p class="detail7">Detail 7</p>
+            <p class="detail7 detail6">Detail 7 & 6</p>
+            <p class="detail5 detail4">Detail 5 & 4</p>
+
             <div id="container">
                 <main id="content" role="main">
 

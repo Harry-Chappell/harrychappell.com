@@ -241,6 +241,65 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     --component-bg-color: white;
   }
 }
+body .detail1,
+body .detail2,
+body .detail3,
+body .detail4,
+body .detail5,
+body .detail6,
+body .detail7 {
+  display: none;
+}
+
+body.detail1 .detail1 {
+  display: flex;
+}
+body.detail1 .detail1-hide {
+  display: none;
+}
+
+body.detail2 .detail2 {
+  display: flex;
+}
+body.detail2 .detail2-hide {
+  display: none;
+}
+
+body.detail3 .detail3 {
+  display: flex;
+}
+body.detail3 .detail3-hide {
+  display: none;
+}
+
+body.detail4 .detail4 {
+  display: flex;
+}
+body.detail4 .detail4-hide {
+  display: none;
+}
+
+body.detail5 .detail5 {
+  display: flex;
+}
+body.detail5 .detail5-hide {
+  display: none;
+}
+
+body.detail6 .detail6 {
+  display: flex;
+}
+body.detail6 .detail6-hide {
+  display: none;
+}
+
+body.detail7 .detail7 {
+  display: flex;
+}
+body.detail7 .detail7-hide {
+  display: none;
+}
+
 a {
   color: var(--primary-color);
 }
