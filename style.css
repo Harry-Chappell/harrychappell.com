@@ -215,7 +215,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @media (prefers-color-scheme: light) {
   body:not(.dark-theme) {
-    --primary-color: blue;
+    --primary-color: #FB8E2C;
     --text-color: #383D40;
     --bg-color: #F3F3F3;
     --component-bg-color: white;
