@@ -33,6 +33,9 @@
         <div id="wrapper" class="hfeed">
 
             <header id="header" role="banner">
+                <nav class="detail1-hide" id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                    <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
+                </nav>
                 <div id="branding">
                     <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
                         <?php
@@ -41,29 +44,15 @@
                         if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; }
                         ?>
                     </div>
-                    <div id="site-description"<?php if ( !is_single() ) { echo ' itemprop="description"'; } ?>><?php bloginfo( 'description' ); ?></div>
+                    <h3 class="detail1">1: This homepage is overly simple. <br> Use the slider on the left.</h3>
+                    <h3 class="detail2">2: This homepage could have more detail. <br> Use the slider on the left.</h3>
+                    <h3 class="detail3">3: Almost there… <br> Keep sliding.</h3>
+                    <h3 class="detail4">4: This homepage is just right.</h3>
+                    <h3 class="detail5">5: Too much detail!</h3>
+                    <h3 class="detail6">6: Now that's just ridiculous!</h3>
+                    <h3 class="detail7">7: Are you happy? You ruined it. <br> Turn that slider down now!</h3>
                 </div>
-                <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                    <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
-                </nav>
             </header>
-
-            <p class="detail1-hide">Detail 1 Hide</p>
-            <p class="detail2-hide">Detail 2 Hide</p>
-            <p class="detail3-hide">Detail 3 Hide</p>
-            <p class="detail4-hide">Detail 4 Hide</p>
-            <p class="detail5-hide">Detail 5 Hide</p>
-            <p class="detail6-hide">Detail 6 Hide</p>
-            <p class="detail7-hide">Detail 7 Hide</p>
-            <p class="detail1">Detail 1</p>
-            <p class="detail2">Detail 2</p>
-            <p class="detail3">Detail 3</p>
-            <p class="detail4">Detail 4</p>
-            <p class="detail5">Detail 5</p>
-            <p class="detail6">Detail 6</p>
-            <p class="detail7">Detail 7</p>
-            <p class="detail7 detail6">Detail 7 & 6</p>
-            <p class="detail5 detail4">Detail 5 & 4</p>
 
             <div id="container">
                 <main id="content" role="main">
