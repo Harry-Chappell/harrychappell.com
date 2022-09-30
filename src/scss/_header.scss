@@ -12,8 +12,8 @@ body {
 
 .btn-dark-mode {
     border: none;
-    height: 35px;
-    width: 35px;
+    height: 36px;
+    width: 36px;
     border-radius: 100%;
     box-shadow: 0 0 10px rgb(0 0 0 / 15%);
     position: fixed;
@@ -21,8 +21,21 @@ body {
     left: 10px;
     background: var(--text-color);
     cursor: pointer;
+    transition: all 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &:hover:not(:active) {
+        height: 42px;
+        width: 42px;
+        bottom: 7px;
+        left: 7px;
+    }
 
     i {
         color: var(--bg-color);
+        font-size: 1rem;
     }
 }

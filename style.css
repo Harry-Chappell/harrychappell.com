@@ -265,8 +265,8 @@ body .detail7 {
 
 .btn-dark-mode {
   border: none;
-  height: 35px;
-  width: 35px;
+  height: 36px;
+  width: 36px;
   border-radius: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   position: fixed;
@@ -274,9 +274,20 @@ body .detail7 {
   left: 10px;
   background: var(--text-color);
   cursor: pointer;
+  transition: all 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-dark-mode:hover:not(:active) {
+  height: 42px;
+  width: 42px;
+  bottom: 7px;
+  left: 7px;
 }
 .btn-dark-mode i {
   color: var(--bg-color);
+  font-size: 1rem;
 }
 
 body.detail1 .detail1 {
