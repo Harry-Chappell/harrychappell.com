@@ -7,7 +7,7 @@
         
         <?php wp_head(); ?>
 
-        <!-- <script src="https://kit.fontawesome.com/9764a321e0.js" crossorigin="anonymous"></script> -->
+        <script src="https://kit.fontawesome.com/9764a321e0.js" crossorigin="anonymous"></script>
     
     </head>
     
