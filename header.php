@@ -7,7 +7,7 @@
         
         <?php wp_head(); ?>
 
-        <script src="https://kit.fontawesome.com/9764a321e0.js" crossorigin="anonymous"></script>
+        <!-- <script src="https://kit.fontawesome.com/9764a321e0.js" crossorigin="anonymous"></script> -->
     
     </head>
     
@@ -15,7 +15,7 @@
         <?php wp_body_open(); ?>
 
         <button class="btn-dark-mode"><i class="fa-solid fa-sun light-hide"></i><i class="fa-solid fa-moon dark-hide"></i></button>
-        
+
         <script>
             const btn = document.querySelector(".btn-dark-mode");
             const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
