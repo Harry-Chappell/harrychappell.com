@@ -14,10 +14,10 @@
     <body <?php body_class( "detail5" ); ?>>
         <?php wp_body_open(); ?>
 
-        <button class="btn-toggle"><i class="fa-solid fa-sun light-hide"></i><i class="fa-solid fa-moon dark-hide"></i></button>
-
+        <button class="btn-dark-mode"><i class="fa-solid fa-sun light-hide"></i><i class="fa-solid fa-moon dark-hide"></i></button>
+        
         <script>
-            const btn = document.querySelector(".btn-toggle");
+            const btn = document.querySelector(".btn-dark-mode");
             const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
             btn.addEventListener("click", function () {

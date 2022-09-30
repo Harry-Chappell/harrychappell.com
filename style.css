@@ -263,6 +263,22 @@ body .detail7 {
   display: none;
 }
 
+.btn-dark-mode {
+  border: none;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background: var(--text-color);
+  cursor: pointer;
+}
+.btn-dark-mode i {
+  color: var(--bg-color);
+}
+
 body.detail1 .detail1 {
   display: flex;
 }
