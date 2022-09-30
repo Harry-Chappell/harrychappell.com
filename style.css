@@ -217,7 +217,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   body:not(.dark-theme) {
     --primary-color: #FB8E2C;
     --text-color: #383D40;
-    --bg-color: #F3F3F3;
+    --bg-color: #F5F5F5;
     --component-bg-color: white;
   }
   body:not(.dark-theme) .light-hide {
@@ -246,7 +246,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   body.light-theme {
     --primary-color: #FB8E2C;
     --text-color: #383D40;
-    --bg-color: #F3F3F3;
+    --bg-color: #F5F5F5;
     --component-bg-color: white;
   }
   body.light-theme .light-hide {

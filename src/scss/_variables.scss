@@ -1,5 +1,5 @@
 $white: white;
-$off-white: #F3F3F3;
+$off-white: #F5F5F5;
 $light-grey: #dddddd;
 $grey: #aaaaaa;
 $dark-grey: #383D40;
@@ -21,7 +21,7 @@ $tertiary: $yellow;
     body:not(.dark-theme)  {
         --primary-color: #FB8E2C;
         --text-color: #383D40;
-        --bg-color: #F3F3F3;
+        --bg-color: #F5F5F5;
         --component-bg-color: white;
         
         .light-hide {
@@ -55,7 +55,7 @@ $tertiary: $yellow;
     body.light-theme {
         --primary-color: #FB8E2C;
         --text-color: #383D40;
-        --bg-color: #F3F3F3;
+        --bg-color: #F5F5F5;
         --component-bg-color: white;
 
         .light-hide {
